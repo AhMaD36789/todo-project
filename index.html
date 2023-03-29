@@ -5,36 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/fea9e61d8b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./reset.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" type="text/css" href="./index.css">
     <title>ToDo lists For you</title>
 </head>
 <body>
     <header>
         <section>
         <img src="https://cdn-icons-png.flaticon.com/512/2387/2387635.png" height="120" width="120">
+        
         </section>
-        <section>
-            <a href="#">Home</a>
-            <a href="./about.html">About</a>
-        </section>
+        <div class="navbar">
+            
+            <a id="home" href="#">Home</a>
+            <a id="about" href="./about.html">About</a>
+        
+        </div>
     </header>
 
     <main>
-<table border="1">
+<table >
     <tr>
-        <th>set your goals here</th>
-        <th>check status here</th>
+        <th>goals here</th>
+        <th>status</th>
     </tr>
     <tr>
-        <td>workout before breakfast for a month</td>
-        <td>not completed</td>
+        <td>workout before breakfast <input type="checkbox" id="task1"> </td>
+        <td><div id="red"><p>r</p></div></td>
     </tr>
     <tr>
-        <td>eat healthy for a month</td>
-        <td>completed</td>
+        <td>eat healthy <input type="checkbox" id="task2" checked> </td>
+        <td><div id="green"><p>G</p></div></td>
     </tr>
     <tr>
-        <td>2 mile run before dawn</td>
-        <td>completed</td>
+        <td>2 mile run before dawn <input type="checkbox" id="task3" checked > </td>
+        <td><div id="green"><p>g</p></div></td>
     </tr>
 </table>
     </main>
